@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hacer pedido | Peppa's</title>
+  <meta name="description" content="Bolis de sabores y bolsas de hielo. Arma tu pedido y envíalo por WhatsApp.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="hero">
+    <a class="volver" href="index.html">Volver al inicio</a>
+    <h1>Bolis bien fríos y hielo cuando lo necesites</h1>
+    <p>¿Qué te provoca hoy?</p>
+    <div class="hero-botones">
+      <button type="button" class="btn-grande btn-bolis" data-ir="bolis">Bolis</button>
+      <button type="button" class="btn-grande btn-hielo" data-ir="hielo">Hielo</button>
+    </div>
+  </header>
+
+  <nav class="tabs" id="menu" aria-label="Categorías">
+    <button type="button" class="tab activo" data-ir="bolis" aria-pressed="true">Bolis</button>
+    <button type="button" class="tab" data-ir="hielo" aria-pressed="false">Hielo</button>
+  </nav>
+
+  <main>
+    <section id="panel-bolis" class="panel">
+      <h2>Bolis</h2>
+      <p class="nota">Todos los bolis cuestan $2.500. Escoge tus sabores y cuántos quieres.</p>
+      <div id="lista-bolis" class="grid"></div>
+    </section>
+
+    <section id="panel-hielo" class="panel" hidden>
+      <h2>Hielo</h2>
+      <p class="nota">Bolsas de hielo para tus bebidas y neveras.</p>
+      <div id="lista-hielo" class="grid"></div>
+    </section>
+
+    <section id="pedido" aria-live="polite">
+      <h2>Tu pedido</h2>
+      <ul id="resumen"></ul>
+      <p id="total" class="total"></p>
+      <a id="enviar" class="btn btn-whatsapp" href="#pedido" aria-disabled="true">Enviar pedido por WhatsApp</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>Peppa's - Super Refrescantes</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

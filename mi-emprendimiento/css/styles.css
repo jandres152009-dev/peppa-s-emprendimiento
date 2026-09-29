@@ -1,0 +1,102 @@
+/* Estilos generales y fondo azul cielo */
+body {
+  font-family: 'Fredoka', sans-serif;
+  background-color: #87CEEB; /* Azul cielo */
+  color: #333333;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Encabezado */
+header.hero {
+  text-align: center;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+header.hero h1 {
+  color: #ff7f00; /* Tono mango / naranja */
+  margin-bottom: 10px;
+}
+
+/* Enlaces y botones de navegación */
+.volver {
+  display: inline-block;
+  margin-bottom: 15px;
+  color: #ff7f00;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.volver:hover {
+  text-decoration: underline;
+}
+
+/* Botones principales color mango */
+.btn-grande, .btn, .tab, .btn-whatsapp {
+  background-color: #FFA500; /* Color mango vibrante */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 25px;
+  font-family: 'Fredoka', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.2s, transform 0.1s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-grande:hover, .btn:hover, .tab:hover, .btn-whatsapp:hover {
+  background-color: #ff8c00; /* Un naranja un poco más oscuro al pasar el mouse */
+  transform: translateY(-2px);
+}
+
+/* Pestañas activas */
+.tab.activo {
+  background-color: #ff6f00;
+}
+
+/* Secciones y paneles de productos */
+main {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.panel h2 {
+  color: #ff7f00;
+  border-bottom: 2px solid #87CEEB;
+  padding-bottom: 5px;
+}
+
+/* Controles de cantidad (+ y -) */
+button[onclick], .grid button {
+  background-color: #FFA500;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button[onclick]:hover {
+  background-color: #ff8c00;
+}
+
+/* Pie de página */
+footer {
+  text-align: center;
+  margin-top: 25px;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
